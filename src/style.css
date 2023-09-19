@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  color: #333;
+}
+
+.section-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80rem;
+  padding: 0 2rem;
+}
+
+.todo-title {
+  font-size: 10rem;
+  font-weight: 700;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.todo-input {
+  border-radius: 5px;
+  max-width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.75);
+  padding: 1.2rem 5rem;
+  font-size: 2rem;
+}
+
+.todo-btn {
+  width: 4rem;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-item {
+  display: flex;
+  align-items: flex-end;
+  padding: 1.6rem 2.3rem;
+  position: relative;
+}
+
+.todo-checkbox {
+  margin-right: 2rem;
+}
+
+.todo-item-delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 90%;
+  cursor: pointer;
+}
+
+.todo-item-text {
+  position: absolute;
+  left: 6rem;
+  width: 70%;
+  overflow: hidden;
+  outline: none;
+  white-space: nowrap;
+}
